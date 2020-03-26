@@ -30,7 +30,7 @@ then git log -n $COMMITS --pretty=format:"%cI | %H | %s" > $tmpfile;
 else git log -n 5 --pretty=format:"%cI | %H | %s" > $tmpfile;
 fi
 
-${VISUAL:-${EDITOR:-gedit}} $tmpfile
+${VISUAL:-${EDITOR:-vi}} $tmpfile
 
 
 ENVFILTER=""
